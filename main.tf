@@ -1,5 +1,5 @@
-resource "aws_ami_copy" "eks_encrypt" {
-  name              = "eks_encrypt"
+resource "aws_ami_copy" "ami_encrypt" {
+  name              = "ami_encrypt"
   description       = "This module is used for encryption of AMI"
   source_ami_id     = "${var.source_ami_id}"
   source_ami_region = "${var.source_ami_region}"
