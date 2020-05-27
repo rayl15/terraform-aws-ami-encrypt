@@ -27,7 +27,18 @@ module "ami-encryt" {
 |------|---------|
 | aws | ~> 2.53 |
 
+## Requirements
 
+| Name | Version |
+|------|---------|
+| terraform | ~> 0.12.6 |
+| aws | ~> 2.53 |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+|project_name|
 Input variables:
 
 project_name = "Name of Project" <br />
