@@ -6,6 +6,11 @@
 ```hcl
 module "ami-encryt" {
   source = "git@github.com:rayl15/terraform-aws-ami-encrypt"
+  project_name = "my_awesome_project"
+  project_envrionment = "dev"
+  source_ami_region = "us-east-1"
+  source_ami_id = "ami-xx"
+  kms_key_id = "kms_id"
 }
 ```
 
