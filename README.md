@@ -38,7 +38,7 @@ module "ami-encryt" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-|project_name|
+|project_name| Name of Project | String | NA | yes |
 Input variables:
 
 project_name = "Name of Project" <br />
