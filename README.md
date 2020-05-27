@@ -39,8 +39,8 @@ module "ami-encryt" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 |project_name| Name of Project | String | NA | yes |
-|project_envrionment| String |Environment Name| NA | yes |
-|source_ami_region| String |Region of AMI ID| NA | yes |
+|project_envrionment|Environment Name|String | NA | yes |
+|source_ami_region|Region of AMI ID|String | NA | yes |
 |source_ami_id|ID Of AMI|String| NA | yes |
 |kms_key_id| KMS Key Id | String|  NA | yes
 
