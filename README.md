@@ -44,5 +44,8 @@ module "ami-encryt" {
 |source_ami_id|ID Of AMI|String| NA | yes |
 |kms_key_id| KMS Key Id | String|  NA | yes
 
-Output variables: <br />
-ecrypted_ami_id = "Encrypted The AMI ID" <br />
+## Outputs
+
+| Name | Description |
+|------|-------------|
+|ecrypted_ami_id|Encrypted The AMI ID|
