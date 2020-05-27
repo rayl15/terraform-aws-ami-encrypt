@@ -1,5 +1,15 @@
 # terraform-aws-ami-encrypt
 
+
+## Usage
+
+```hcl
+module "ami-encryt" {
+  source = "git@github.com:rayl15/terraform-aws-ami-encrypt"
+}
+```
+
+
 Input variables:
 
 project_name = "Name of Project" <br />
