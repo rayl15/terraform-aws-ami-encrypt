@@ -39,13 +39,10 @@ module "ami-encryt" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 |project_name| Name of Project | String | NA | yes |
-Input variables:
-
-project_name = "Name of Project" <br />
-project_envrionment = "Environment: dev/stage" <br />
-source_ami_region = "Region of AMI ID" <br />
-source_ami_id = "ID Of AMI" <br />
-kms_key_id = "KMS Key Id" <br />
+|project_envrionment| |Environment Name| NA | yes |
+|source_ami_region|Region of AMI ID| NA | yes |
+|source_ami_id|ID Of AMI| NA | yes |
+|kms_key_id| KMS Key Id | NA | yes
 
 Output variables: <br />
 ecrypted_ami_id = "Encrypted The AMI ID" <br />
