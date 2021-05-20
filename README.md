@@ -14,6 +14,21 @@ module "ami-encryt" {
 }
 ```
 
+The output can be imported into any module which needs encrypted AMI. Below is an example of imported into EKS worker groups.
+
+```hcl
+  worker_groups = [
+    {
+      instance_type = "m5.large"
+      asg_max_size  = 20
+      asg_min_size = 3  
+      Project = "${var.project_name}"
+      key_name = "${var.key_name}"
+      ami_id = "${module.ami_encrypt.ecrypted_ami_id}"
+    }
+  ]
+  ```
+
 ## Requirements
 
 | Name | Version |
